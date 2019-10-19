@@ -10,19 +10,18 @@ export default class Users extends Component {
       };
       handleButtonPress = async event => {
         
-        const response = await axios.get("/sessions", this.state);
-        
-        if (response.status === 200) {
-            this.setState({
+        const response = await axios.get("Aqui vai a rota do firebase ", this.state);
+        console.log(response)
+        // if (response.status === 200) {
+        //     this.setState({
                 
-            });
-          }
+        //     });
+        //   }
       };
 
   render() {
     return <div >
         <button onClick={this.handleButtonPress}>Log-in</button>
-
         <span>
             {this.state.users}
         </span>
